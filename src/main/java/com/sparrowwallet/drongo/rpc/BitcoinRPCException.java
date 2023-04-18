@@ -49,7 +49,7 @@ public class BitcoinRPCException extends RuntimeException {
                     rpcError = new BitcoinRPCError(error);
                 }
             } catch(ParseException e) {
-                log.error("Could not parse bitcoind error", e);
+                log.error("Could not parse fujicoind error", e);
             }
         }
     }

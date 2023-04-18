@@ -3,10 +3,10 @@ package com.sparrowwallet.drongo;
 import java.util.Locale;
 
 public enum Network {
-    MAINNET("mainnet", 0, "1", 5, "3", "bc", ExtendedKey.Header.xprv, ExtendedKey.Header.xpub, 128, 8332),
-    TESTNET("testnet", 111, "mn", 196, "2", "tb", ExtendedKey.Header.tprv, ExtendedKey.Header.tpub, 239, 18332),
-    REGTEST("regtest", 111, "mn", 196, "2", "bcrt", ExtendedKey.Header.tprv, ExtendedKey.Header.tpub, 239, 18443),
-    SIGNET("signet", 111, "mn", 196, "2", "tb", ExtendedKey.Header.tprv, ExtendedKey.Header.tpub, 239, 38332);
+    MAINNET("mainnet", 36, "F", 16, "7", "fc", ExtendedKey.Header.xprv, ExtendedKey.Header.xpub, 164, 3776),
+    TESTNET("testnet", 74, "WX", 196, "2", "tf", ExtendedKey.Header.tprv, ExtendedKey.Header.tpub, 202, 13776),
+    REGTEST("regtest", 74, "WX", 196, "2", "fcrt", ExtendedKey.Header.tprv, ExtendedKey.Header.tpub, 202, 16776),
+    SIGNET("signet", 74, "WX", 196, "2", "tf", ExtendedKey.Header.tprv, ExtendedKey.Header.tpub, 202, 33776);
 
     public static final String BLOCK_HEIGHT_PROPERTY = "com.sparrowwallet.blockHeight";
 
