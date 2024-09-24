@@ -6,15 +6,15 @@ public enum BitcoinUnit {
     AUTO("Auto") {
         @Override
         public long getSatsValue(double unitValue) {
-            throw new UnsupportedOperationException("Auto unit cannot convert bitcoin values");
+            throw new UnsupportedOperationException("Auto unit cannot convert fujicoin values");
         }
 
         @Override
         public double getValue(long satsValue) {
-            throw new UnsupportedOperationException("Auto unit cannot convert bitcoin values");
+            throw new UnsupportedOperationException("Auto unit cannot convert fujicoin values");
         }
     },
-    BTC("BTC") {
+    BTC("FJC") {
         @Override
         public long getSatsValue(double unitValue) {
             return Math.round(unitValue * Transaction.SATOSHIS_PER_BITCOIN);

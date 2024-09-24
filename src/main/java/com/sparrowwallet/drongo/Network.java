@@ -3,11 +3,11 @@ package com.sparrowwallet.drongo;
 import java.util.Locale;
 
 public enum Network {
-    MAINNET("mainnet", "Mainnet", "mainnet", 0, "1", 5, "3", "bc", ExtendedKey.Header.xprv, ExtendedKey.Header.xpub, 128, 8332),
-    TESTNET("testnet", "Testnet3", "testnet3", 111, "mn", 196, "2", "tb", ExtendedKey.Header.tprv, ExtendedKey.Header.tpub, 239, 18332),
-    REGTEST("regtest", "Regtest", "regtest", 111, "mn", 196, "2", "bcrt", ExtendedKey.Header.tprv, ExtendedKey.Header.tpub, 239, 18443),
-    SIGNET("signet", "Signet", "signet", 111, "mn", 196, "2", "tb", ExtendedKey.Header.tprv, ExtendedKey.Header.tpub, 239, 38332),
-    TESTNET4("testnet4", "Testnet4", "testnet4", 111, "mn", 196, "2", "tb", ExtendedKey.Header.tprv, ExtendedKey.Header.tpub, 239, 48332);
+    MAINNET("mainnet", "Mainnet", "mainnet", 36, "F", 16, "7", "fc", ExtendedKey.Header.xprv, ExtendedKey.Header.xpub, 164, 3776),
+    TESTNET("testnet", "Testnet3", "testnet3", 74, "WX", 196, "2", "tf", ExtendedKey.Header.tprv, ExtendedKey.Header.tpub, 202, 13776),
+    REGTEST("regtest", "Regtest", "regtest", 74, "WX", 196, "2", "fcrt", ExtendedKey.Header.tprv, ExtendedKey.Header.tpub, 202, 16776),
+    SIGNET("signet", "Signet", "signet", 74, "WX", 196, "2", "tf", ExtendedKey.Header.tprv, ExtendedKey.Header.tpub, 202, 33766),
+    TESTNET4("testnet4", "Testnet4", "testnet4", 74, "WX", 196, "2", "tf", ExtendedKey.Header.tprv, ExtendedKey.Header.tpub, 202, 43776);
 
     public static final String BLOCK_HEIGHT_PROPERTY = "com.sparrowwallet.blockHeight";
     private static final Network[] CANONICAL_VALUES = new Network[]{MAINNET, TESTNET, REGTEST, SIGNET};
